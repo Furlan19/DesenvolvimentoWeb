@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estacionamento - Vagas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Controle de Estacionamento</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Listar Vagas</a></li>
+                    <li><a href="cadastro.html">Cadastrar Reserva</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filtros">
+            <h2>Filtrar Vagas</h2>
+            <div class="filtro-opcoes">
+                <button id="todas-vagas" class="btn btn-primary">Todas</button>
+                <button id="vagas-ocupadas" class="btn">Ocupadas</button>
+                <button id="vagas-disponiveis" class="btn">Disponíveis</button>
+            </div>
+        </section>
+
+        <section class="lista-vagas">
+            <h2>Vagas Cadastradas</h2>
+            <div id="vagas-container"></div>
+        </section>
+
+        <div id="mensagem-view"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - Sistema de Controle de Estacionamento</p>
+        </div>
+    </footer>
+
+    <script src="js/models/Vaga.js"></script>
+    <script src="js/views/VagaView.js"></script>
+    <script src="js/views/MensagemView.js"></script>
+    <script src="js/services/VagaService.js"></script>
+    <script src="js/controllers/VagaController.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
